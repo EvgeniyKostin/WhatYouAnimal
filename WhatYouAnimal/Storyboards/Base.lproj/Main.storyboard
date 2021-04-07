@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatYouAnimal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="WhatYouAnimal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,7 @@
         <!--Вопрос №-->
         <scene sceneID="djU-md-bfc">
             <objects>
-                <viewController id="ll0-U9-OdJ" sceneMemberID="viewController">
+                <viewController id="ll0-U9-OdJ" customClass="QuestionsViewController" customModule="WhatYouAnimal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ctO-6o-rf1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,14 +252,7 @@
                             </constraint>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="x9p-ow-EE4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="undo" id="XoW-aF-yKH">
-                            <color key="tintColor" name="AccentColor"/>
-                            <connections>
-                                <segue destination="PkA-5b-kuW" kind="show" id="Ucl-1m-sMu"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="x9p-ow-EE4"/>
                     <connections>
                         <segue destination="PkA-5b-kuW" kind="show" identifier="showResult" id="f43-Tb-5fO"/>
                     </connections>
@@ -271,7 +264,7 @@
         <!--Результат-->
         <scene sceneID="rwu-qs-Y6n">
             <objects>
-                <viewController id="PkA-5b-kuW" sceneMemberID="viewController">
+                <viewController id="PkA-5b-kuW" customClass="ResultsViewController" customModule="WhatYouAnimal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="erU-Sy-VIX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,10 +298,14 @@
                     <navigationItem key="navigationItem" title="Результат" id="GHd-dJ-PRj">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="JbD-K1-DjE">
                             <color key="tintColor" name="AccentColor"/>
+                            <connections>
+                                <segue destination="g7L-0i-Rq2" kind="unwind" unwindAction="unwindWithSegue:" id="yCm-rS-onu"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHo-XI-73g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="g7L-0i-Rq2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2145" y="101"/>
         </scene>
@@ -333,9 +330,6 @@
             <point key="canvasLocation" x="574" y="102"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="f43-Tb-5fO"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

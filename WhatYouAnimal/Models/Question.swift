@@ -20,7 +20,7 @@ struct Question {
                     Answer(title: "Стейк", type: .dog),
                     Answer(title: "Рыба", type: .owl),
                     Answer(title: "Банан", type: .monkey),
-                    Answer(title: "Кукуруза", type: .turtle)
+                    Answer(title: "Капуста", type: .turtle)
                 ]
             ),
             Question(

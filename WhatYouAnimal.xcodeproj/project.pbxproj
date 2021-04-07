@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2D2E1D261E6AC100556D1D /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D2E1C261E6AC100556D1D /* QuestionsViewController.swift */; };
+		FE2D2E20261E6B0600556D1D /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D2E1F261E6B0600556D1D /* ResultsViewController.swift */; };
 		FE576936261D030D0062E03C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE576935261D030D0062E03C /* AppDelegate.swift */; };
 		FE576938261D030D0062E03C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE576937261D030D0062E03C /* SceneDelegate.swift */; };
-		FE57693A261D030D0062E03C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE576939261D030D0062E03C /* ViewController.swift */; };
+		FE57693A261D030D0062E03C /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE576939261D030D0062E03C /* IntroductionViewController.swift */; };
 		FE57693D261D030D0062E03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE57693B261D030D0062E03C /* Main.storyboard */; };
 		FE57693F261D03120062E03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE57693E261D03120062E03C /* Assets.xcassets */; };
 		FE576942261D03120062E03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE576940261D03120062E03C /* LaunchScreen.storyboard */; };
@@ -17,10 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE2D2E1C261E6AC100556D1D /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		FE2D2E1F261E6B0600556D1D /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		FE576932261D030D0062E03C /* WhatYouAnimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatYouAnimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE576935261D030D0062E03C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE576937261D030D0062E03C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FE576939261D030D0062E03C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE576939261D030D0062E03C /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		FE57693C261D030D0062E03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE57693E261D03120062E03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE576941261D03120062E03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,7 +109,9 @@
 		FE57694E261D06890062E03C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FE576939261D030D0062E03C /* ViewController.swift */,
+				FE576939261D030D0062E03C /* IntroductionViewController.swift */,
+				FE2D2E1C261E6AC100556D1D /* QuestionsViewController.swift */,
+				FE2D2E1F261E6B0600556D1D /* ResultsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,10 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE57693A261D030D0062E03C /* ViewController.swift in Sources */,
+				FE57693A261D030D0062E03C /* IntroductionViewController.swift in Sources */,
+				FE2D2E1D261E6AC100556D1D /* QuestionsViewController.swift in Sources */,
 				FE576954261E4ACD0062E03C /* Question.swift in Sources */,
 				FE576936261D030D0062E03C /* AppDelegate.swift in Sources */,
 				FE576938261D030D0062E03C /* SceneDelegate.swift in Sources */,
+				FE2D2E20261E6B0600556D1D /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
