@@ -56,15 +56,55 @@
 		FE576934261D030D0062E03C /* WhatYouAnimal */ = {
 			isa = PBXGroup;
 			children = (
-				FE576935261D030D0062E03C /* AppDelegate.swift */,
-				FE576937261D030D0062E03C /* SceneDelegate.swift */,
-				FE576939261D030D0062E03C /* ViewController.swift */,
-				FE57693B261D030D0062E03C /* Main.storyboard */,
-				FE57693E261D03120062E03C /* Assets.xcassets */,
-				FE576940261D03120062E03C /* LaunchScreen.storyboard */,
-				FE576943261D03120062E03C /* Info.plist */,
+				FE57694C261D06310062E03C /* Storyboards */,
+				FE57694E261D06890062E03C /* View */,
+				FE57694D261D066C0062E03C /* Models */,
+				FE57694B261D03A80062E03C /* Supporting */,
+				FE57694A261D035E0062E03C /* Resources */,
 			);
 			path = WhatYouAnimal;
+			sourceTree = "<group>";
+		};
+		FE57694A261D035E0062E03C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE57693E261D03120062E03C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE57694B261D03A80062E03C /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				FE576935261D030D0062E03C /* AppDelegate.swift */,
+				FE576937261D030D0062E03C /* SceneDelegate.swift */,
+				FE576943261D03120062E03C /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		FE57694C261D06310062E03C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FE57693B261D030D0062E03C /* Main.storyboard */,
+				FE576940261D03120062E03C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FE57694D261D066C0062E03C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE57694E261D06890062E03C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE576939261D030D0062E03C /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND68BB84B4;
-				INFOPLIST_FILE = WhatYouAnimal/Info.plist;
+				INFOPLIST_FILE = WhatYouAnimal/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND68BB84B4;
-				INFOPLIST_FILE = WhatYouAnimal/Info.plist;
+				INFOPLIST_FILE = WhatYouAnimal/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
